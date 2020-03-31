@@ -5,20 +5,17 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.password">postgre</property>
+        <property name="hibernate.connection.password">postgres</property>
         <property name="hibernate.connection.url">jdbc:postgresql://127.0.0.1:5432/javaee</property>
         <property name="hibernate.connection.username">postgres</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.ProgressDialect</property>
         <property name="hbm2ddl.auto">create-drop</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.connection.release_mode">auto</property>
         <property name="current_session_context_class">thread</property>
         <property name="hibernate.connection.autoReconnect">true</property>
 
-        <mapping class="com.aubrun.eric.projet6.model.bean.Longueur" />
-        <mapping class="com.aubrun.eric.projet6.model.bean.Photo" />
-        <mapping class="com.aubrun.eric.projet6.model.bean.Secteur" />
-        <mapping class="com.aubrun.eric.projet6.model.bean.Site" />
-        <mapping class="com.aubrun.eric.projet6.model.bean.Voie" />
+        <mapping class="fr.fenestre.dorian.model.Images" />
+
     </session-factory>
 </hibernate-configuration>
