@@ -4,7 +4,7 @@
     <facet type="web" name="Web">
       <configuration>
         <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebContent/WEB-INF/web.xml" />
         </descriptors>
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
@@ -13,9 +13,18 @@
     </facet>
     <facet type="hibernate" name="Hibernate">
       <configuration>
-        <datasource-map />
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" value="44050a8a-4c77-4793-a5c8-95084f53da13" />
+        </datasource-map>
         <naming-strategy-map />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/java/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
+    <facet type="javaeeApplication" name="javaEEApplication">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="application.xml" url="file://$MODULE_DIR$/WebContent/META-INF/application.xml" />
+        </descriptors>
       </configuration>
     </facet>
   </component>
@@ -28,6 +37,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="bootstrap-theme" level="application" />
     <orderEntry type="module" module-name="climb-business" />
     <orderEntry type="module" module-name="climb-consumer" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.4.12.Final" level="project" />
@@ -61,5 +72,6 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.bval:bval-jsr:1.1.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.bval:bval-core:1.1.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.commons:commons-lang3:3.6" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
   </component>
 </module>
