@@ -13,10 +13,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="climb" target="1.7" />
-      <module name="climb-business" target="1.7" />
-      <module name="climb-consumer" target="1.7" />
-      <module name="climb-model" target="1.7" />
+      <module name="climb" target="1.8" />
+      <module name="climb-business" target="1.8" />
+      <module name="climb-consumer" target="1.8" />
+      <module name="climb-model" target="1.8" />
       <module name="climb-webapp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
