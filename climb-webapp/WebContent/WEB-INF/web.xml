@@ -5,11 +5,19 @@
 		 version="3.0">
 
 	<display-name>climb</display-name>
+    <servlet>
+        <servlet-name>Test</servlet-name>
+        <servlet-class>servlets.Test</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
 
-	<jsp-config>
+    <jsp-config>
 		<jsp-property-group>
-			<url-pattern>*.jsp</url-pattern>
-			<include-prelude>WebContent/WEB-INF/jsp/_include/taglibs.jsp</include-prelude>
+			<url-pattern>test.jsp</url-pattern>
+			<include-prelude>/WEB-INF/jsp/_include/taglibs.jsp</include-prelude>
 		</jsp-property-group>
 	</jsp-config>
 
